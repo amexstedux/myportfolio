@@ -16,18 +16,22 @@
   <img id="logo" src="/Images/signature.png">
   <nav>
     <ul id="navBar">
-      <li id="navEl"><a href="home.html">Home</a></li>
-      <li id="navEl"><a href="blog.html">Work</a></li>
-      <li id="navEl"><a href="news.html">Info</a></li>
-      <li id="navEl"><a href="news.html">Contact</a></li>
+      <li id="navEl"><a href="/index.html">Home</a></li>
+      <li id="navEl"><a href="work.html">Work</a></li>
+      <li id="navEl"><a href="info.html">Info</a></li>
+      <li id="navEl"><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
 
 <body>
   <section class="home">
-    <div class="HomeA">Home</div>
-    <div class="HomeB">Home</div>
+    <div class="HomeA">
+        <img id="bezier" src="/Images/Logo1.png" alt="Image of Bezier Lines with gestault law of continuation and common fate, basically a wierd looking pyramid;">
+    </div>
+    <div class="HomeB">
+        <a href="work.html" id="openLink"><img src="/Images/Group 8.png" id="openMessage" alt: " hey i am anthony exsted, a ux designer, I solve problems by understanding the user and their needs. Learn More by clciking here. "></a>
+    </div>
   </section>
   <section class="work">
     <div class="WorkA">Work</div>
@@ -38,7 +42,33 @@
     <div class="InfoB">Info</div>
   </section>
   <section class="contact">
-    <div class="contactInfo">contact form</div>
+    <div id="container" class="contactInfo">
+        <h3>Contact Form</h3>
+        <form action="/action_page.php">
+          <div id="emailPhonebox">
+            <label for="fname">Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="First Name Last Name ">
+      
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Required">
+      
+            <label for="Phone">Phone:</label>
+            <input type="tel" id="Phone" name="Phone" placeholder="Optional" maxlength="15">
+      
+            <label for="contactP">Contact Prefrences:</label>
+            <select id="contactP" name="contactP">
+              <option value="Both">No Prefrence</option>
+              <option value="Email">Email</option>
+              <option value="Phone">Phone</option>
+            </select>
+      
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Drop me a line!"></textarea>
+      
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
   </section>
 </body>
 <section class="footerNav">

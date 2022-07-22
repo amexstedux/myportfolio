@@ -1,3 +1,6 @@
+html{
+    background-color: #262626;
+}
 header {
     position: fixed;
     box-sizing: border-box;
@@ -6,7 +9,7 @@ header {
     left: 0px;
     top: 0px;
     background: #262626;
-    border: 3px solid #736853;
+    border-bottom: 3px solid #736853;
   }
   #logo {
     height: 48px;
@@ -14,19 +17,44 @@ header {
     margin: auto;
     overflow: visible;
   }
+  a:link {
+    color: #f2f2f2;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #f2f2f2;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:visited {
+    color: #f2f2f2;
+    background-color: transparent;
+    text-decoration: none;}
+
+  a:active {
+    color: #ca4f37;
+    background-color: transparent;
+    text-decoration: underline;
+  }
   nav {
    float:right;
-   margin-top: 0px;
+   margin-top: 19px;
+   
   }
   #navBar{
     
-    text-align:center;
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
   #navEl{
-    display:inline-block;
+    display:inline;
+    margin-left: 19px;
+    margin-right: 19px;
+    font-family: 'Helvetica';
+    font-size: 24px;
+    
   } 
   body {
     overflow: visible;
@@ -39,14 +67,30 @@ header {
     left: 0px;
     top: 64px;
     background-color: 262626;
-    
+  }
+  #bezier{
+    width: 33%;
+    display:block;
+    Margin-top: 25%;
+    margin-left:40%;
+    margin-right: 60%;
+
+
   }
   .HomeA {
-    background-color: red;
+    background-color: #262626;
+    
   }
   .HomeB {
-    background-color: green;
+    background-color: #262626;
   }
+#openLink { 
+    display:block;
+    Margin-top: 25%;
+    margin-left:auto;
+    margin-right: auto;
+}
+  
   .work {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -57,10 +101,10 @@ header {
     background: #ca4f37;
   }
   .WorkA {
-    background-color: yellow;
+    background-color: #ca4f37;
   }
   .WorkB {
-    background-color: orange;
+    background-color: #ca4f37;
   }
   .info {
     display: grid;
@@ -72,10 +116,10 @@ header {
     background: #00334f;
   }
   .InfoA {
-    background-color: Purple;
+    background-color: #00334f;
   }
   .InfoB {
-    background-color: pink;
+    background-color: #00334f;
   }
   .contact {
     display: grid;
@@ -90,8 +134,91 @@ header {
     width: 50%;
     height: 50%;
     margin: auto;
-    background-color: brown;
+    background-color: #262626;
   }
+  form {
+    font-family: Helvetica, sans-serif;
+  }
+  h3 {
+    font-family: Trade Gothic, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  input[type="text"],
+  select,
+  [type="tel"],
+  [type="email"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 3px solid #736853;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    resize: vertical;
+  }
+  
+  input[type="submit"] {
+    background-color: #ca4f37;
+    color: white;
+    padding: 12px 20px;
+  
+    border-radius: 5px;
+    border: 3px solid #736853;
+  
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #f2f2f2;
+    color: #262626;
+  }
+  
+  #container {
+    width: 500px;
+    height: 675px;
+    border-radius: 5px;
+    background-color: #262626;
+    padding: 1%;
+    color: #f2f2f2;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #emailPhonebox {
+    display: inline-block;
+  }
+  
+  #fname {
+    display: block;
+    width: 500px;
+    height: 24px;
+  }
+  #contactP {
+    display: block;
+    width: 500px;
+  }
+  
+  #Phone {
+    display: block;
+    width: 500px;
+    height: 24px;
+  }
+  #email {
+    display: block;
+    width: 500px;
+    height: 24px;
+  }
+  #message {
+    display: block;
+    height: 200px;
+    width: 500px;
+  }
+  
   .footerNav {
     box-sizing: border-box;
     width: 100%;
