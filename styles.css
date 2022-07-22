@@ -232,21 +232,23 @@ header {
     background-color: black;
     color: white;
   }
-  /* Mobile */
-  .container {
-    padding: 14px;
-  }
   
-  /* Tablet */
-  @media (min-width: 600px) {
+  @media (min-width: 480px) {
     .container {
-      padding: 20px;
+      padding: 1%;
     }
   }
   
-  /* Desktop */
+  
+  @media (min-width: 600px) {
+    .container {
+      padding: 1%;
+    }
+  }
+  
+  
   @media (min-width: 900px) {
     .container {
-      padding: 24px;
+      padding: 1%;
     }
   }
