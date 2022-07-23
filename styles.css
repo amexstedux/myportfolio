@@ -146,7 +146,7 @@ form {
   font-family: Helvetica, sans-serif;
 }
 h3 {
-  font-family: Trade Gothic, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   text-align: center;
   font-size: 24px;
   font-weight: bold;
@@ -186,7 +186,7 @@ input[type="submit"]:hover {
 
 #container {
   width: 500px;
-  height: 675px;
+  height: 63%;
   border-radius: 5px;
   background-color: #262626;
   padding: 1%;
