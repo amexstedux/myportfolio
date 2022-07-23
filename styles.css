@@ -118,6 +118,7 @@ body {
 #pictureVasa{
   width: 500px;
   align-self: center;
+  justify-self: center;
 
 }
 .InfoA {
