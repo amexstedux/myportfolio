@@ -115,6 +115,11 @@ body {
   top: 2234px;
   background: #00334f;
 }
+#pictureVasa{
+  width: 500px;
+  align-self: center;
+
+}
 .InfoA {
   background-color: #00334f;
 }
