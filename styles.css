@@ -48,11 +48,12 @@ nav {
   padding: 0;
 }
 #circle{
+  align-items: center;
   width:24px;
   margin-right: 19px;
 }
 #navEl{
-  display:inline;
+  display:inline-block;
   margin-left: 19px;
   margin-right: 19px;
   font-family: 'Helvetica';
@@ -73,7 +74,7 @@ body {
 }
 #bezier{
   width: 40%;
-  display: flex;
+  min-width: 300px;
   Margin-top: 35%;
   margin-left:40%;
   margin-right: 60%;
@@ -85,14 +86,15 @@ body {
   background-color: #262626;
 }
 #openLink { 
-  display:block;
+  display: block;
   Margin-top: 35%;
   margin-left:auto;
   margin-right: auto;
 }
 .pageDown{
-bottom: 19px;
-right: 19px;
+position: absolute;
+bottom:90px;
+right: 90px;
 }
 
 .work {
