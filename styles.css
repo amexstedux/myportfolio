@@ -9,10 +9,10 @@ header {
   left: 0px;
   top: 0px;
   background: #262626;
-  border-bottom: 3px solid #736853;
 }
 #logo {
-  height: 48px;
+  margin-top: 19px;
+  height: 64px;
   width: auto;
   margin: auto;
   overflow: visible;
@@ -40,13 +40,16 @@ a:active {
 nav {
  float:right;
  margin-top: 19px;
- 
 }
 #navBar{
-  
+  margin-top: 19px;
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+#circle{
+  width:24px;
+  margin-right: 19px;
 }
 #navEl{
   display:inline;
@@ -54,7 +57,6 @@ nav {
   margin-right: 19px;
   font-family: 'Helvetica';
   font-size: 24px;
-  
 } 
 body {
   overflow: visible;
@@ -67,28 +69,30 @@ body {
   left: 0px;
   top: 64px;
   background-color: 262626;
+  border-top: 3px solid #736853;
 }
 #bezier{
-  width: 33%;
-  display:block;
-  Margin-top: 25%;
+  width: 40%;
+  display: flex;
+  Margin-top: 35%;
   margin-left:40%;
   margin-right: 60%;
-
-
 }
 .HomeA {
   background-color: #262626;
-  
 }
 .HomeB {
   background-color: #262626;
 }
 #openLink { 
   display:block;
-  Margin-top: 25%;
+  Margin-top: 35%;
   margin-left:auto;
   margin-right: auto;
+}
+.pageDown{
+bottom: 19px;
+right: 19px;
 }
 
 .work {
@@ -116,7 +120,7 @@ body {
   background: #00334f;
 }
 #pictureVasa{
-  width: 500px;
+  width: 250px;
   align-self: center;
   justify-self: center;
 
@@ -239,21 +243,21 @@ footer {
   color: white;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 320px) {
   .container {
     padding: 1%;
   }
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 481px) {
   .container {
     padding: 1%;
   }
 }
 
 
-@media (min-width: 900px) {
+@media (min-width: 769px) {
   .container {
     padding: 1%;
   }

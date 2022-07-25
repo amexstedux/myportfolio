@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Trade Gothic Next Rust';
+    src: url('TradeGothicNextRust-Heavy.eot');
+    src: url('TradeGothicNextRust-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('TradeGothicNextRust-Heavy.woff2') format('woff2'),
+        url('TradeGothicNextRust-Heavy.woff') format('woff'),
+        url('TradeGothicNextRust-Heavy.ttf') format('truetype'),
+        url('TradeGothicNextRust-Heavy.svg#TradeGothicNextRust-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
