@@ -1,5 +1,25 @@
 html{
   background-color: #262626;
+
+}
+.column{
+  flex: 50%;
+}
+@font-face{
+  font-family: Proxima Nova;
+  src: url(cssfonts/proxima_nova_reg-webfont.woff)format('woff'),
+  url(cssfonts/proxima_nova_reg-webfont.woff2)format('woff2');
+}
+@font-face{
+  font-family: Trade Gothic;
+  src: url(cssfonts/TradeGothicNextRust-Heavy.woff)format('woff'),
+  url(cssfonts/TradeGothicNextRust-Heavy.woff2)format('woff2');
+
+}
+p{
+  font-family: Trade Gothic;
+  color:#f2f2f2;
+  font-size: 72px;
 }
 header {
   position: fixed;
@@ -60,51 +80,72 @@ nav {
   font-size: 24px;
 } 
 body {
+  box-sizing: border-box;
   overflow: visible;
 }
 .home {
+  box-sizing: border-box;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 100%;
-  height: 1053px;
-  left: 0px;
-  top: 64px;
-  background-color: 262626;
-  border-top: 3px solid #736853;
-}
-#bezier{
-  width: 40%;
-  min-width: 300px;
-  Margin-top: 35%;
-  margin-left:40%;
-  margin-right: 60%;
-}
-.HomeA {
-  background-color: #262626;
-}
-.HomeB {
-  background-color: #262626;
-}
-#openLink { 
-  display: block;
-  Margin-top: 35%;
-  margin-left:auto;
-  margin-right: auto;
-}
-.pageDown{
-position: absolute;
-bottom:90px;
-right: 90px;
-}
-
-.work {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
   width: 100%;
   height: 1117px;
   left: 0px;
-  top: 1117px;
+  top: 64px;
+  background-color: 262626;
+  padding-left: 5%;
+  padding-right:5%;
+}
+.HomeA {
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  background-color: #262626;
+}
+.HomeB {
+  box-sizing: border-box;
+  width: 100%;
+  float:right;
+  background-color: #262626;
+}
+#bezier{
+  box-sizing: border-box;
+  width: 56%;
+  height: auto;
+  min-width: 300px;
+  display:flex;
+  margin-top: 25%;
+  float:right;
+  margin-right: 10%;
+}
+#openLink { 
+  box-sizing: border-box;
+  display: flex;
+  Margin-top: 35%;
+}
+.pageDown{
+box-sizing: border-box;
+position: fixed;
+bottom:90px;
+right: 90px;
+}
+.pageUp{
+  box-sizing: border-box;
+  position: fixed;
+  bottom:150px;
+  right: 90px;
+  }
+
+
+.work {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  height: 1060px;
+  left: 0px;
+  top: 1181px;
   background: #ca4f37;
+  padding-left: 5%;
+  padding-right:5%;
 }
 .WorkA {
   background-color: #ca4f37;
@@ -114,12 +155,14 @@ right: 90px;
 }
 .info {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
   width: 100%;
-  height: 1117px;
+  height: 1060px;
   left: 0px;
-  top: 2234px;
+  top: 2241px;
   background: #00334f;
+  padding-left: 5%;
+  padding-right:5%;
 }
 #pictureVasa{
   width: 250px;
@@ -137,10 +180,12 @@ right: 90px;
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
-  height: 1117px;
+  height: 1060px;
   left: 0px;
-  top: 3351px;
+  top: 3301px;
   background: #736853;
+  padding-left: 5%;
+  padding-right:5%;
 }
 .contactInfo {
   width: 50%;
@@ -192,7 +237,7 @@ input[type="submit"]:hover {
 
 #container {
   width: 500px;
-  height: 63%;
+  height: 65%;
   border-radius: 5px;
   background-color: #262626;
   padding: 1%;
@@ -239,28 +284,12 @@ input[type="submit"]:hover {
   top: 4467px;
   background: #f2f2f2;
   border: 3px solid #262626;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 footer {
+  display: inline-flexbox;
   background-color: black;
   color: white;
 }
 
-@media (min-width: 320px) {
-  .container {
-    padding: 1%;
-  }
-}
-
-
-@media (min-width: 481px) {
-  .container {
-    padding: 1%;
-  }
-}
-
-
-@media (min-width: 769px) {
-  .container {
-    padding: 1%;
-  }
-}
