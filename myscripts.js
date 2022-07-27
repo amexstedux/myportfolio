@@ -3,21 +3,21 @@
       width: 100%;
     }
   }
-  @media (min-width: 320px) {
+  @media screen (min-width: 320px) {
     .container {
       padding: 1%;
     }
   }
   
   
-  @media (min-width: 481px) {
+  @media screen (min-width: 481px) {
     .container {
       padding: 1%;
     }
   }
   
   
-  @media (min-width: 769px) {
+  @media screen (min-width: 769px) {
     .container {
       padding: 1%;
     }
