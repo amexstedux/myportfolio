@@ -1,5 +1,8 @@
 html{
-  background-color: #262626;
+background-image: url(/myportfolio/Images/backgroundoverlay2.svg);
+background-size: cover;
+ background-repeat: no-repeat;
+ overflow: scroll;
 }
 .column{
   flex: 50%;
@@ -15,10 +18,21 @@ html{
   url(cssfonts/TradeGothicNextRust-Heavy.woff2)format('woff2');
 
 }
-p{
+h1{
   font-family: Trade Gothic;
   color:#f2f2f2;
   font-size: 72px;
+}
+h2{
+  font-family: Helvetica;
+  color:#f2f2f2;
+  font-size: 32px;
+  font-weight: bold;
+}
+p{
+  font-family: Proxima Nova;
+  color:#f2f2f2;
+  font-size: 26px;
 }
 header {
   position: fixed;
@@ -28,6 +42,7 @@ header {
   left: 0px;
   top: 0px;
   background: #262626;
+  overflow: hidden;
 }
 #logo {
   display: inline-flex;
@@ -35,7 +50,6 @@ header {
   height: 64px;
   width: auto;
   margin: auto;
-  overflow: visible;
 }
 a:link {
   color: #f2f2f2;
@@ -81,7 +95,9 @@ nav {
 } 
 body {
   box-sizing: border-box;
-  overflow: visible;
+  overflow: scroll;
+  width:100%;
+  background-color: #262626;opacity: .97;
 }
 .home {
   box-sizing: border-box;
@@ -93,20 +109,20 @@ body {
   margin-top: 64px;
   padding-left: 5%;
   padding-right:5%;
+  outline: 1px solid red;
 }
 .HomeA {
   display:flexbox;
   box-sizing: border-box;
   width: 100%;
   float: left;
-  background-color: #262626;
+  outline: 1px solid red;
 }
 .HomeB {
-  display: flexbox;
   box-sizing: border-box;
   width: 100%;
   float:right;
-  background-color: #262626;
+  outline: 1px solid red;
 }
 #bezier{
   display: flex;
@@ -135,11 +151,9 @@ right: 90px;
   bottom:150px;
   right: 90px;
   }
-
-
 .work {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 25% 75%;
   width: 100%;
   height: 1060px;
   left: 0px;
@@ -147,12 +161,38 @@ right: 90px;
   background: #ca4f37;
   padding-left: 5%;
   padding-right:5%;
+  outline: 1px solid blue;
 }
 .WorkA {
   background-color: #ca4f37;
+  display:flexbox;
+  float:left;
+  outline: 1px solid blue;
+}
+.workAarticle{
+  line-height: 24px;
+}
+.skillsList{
+  list-style: none;
+}
+.skillsT{
+  margin-left: 10%;
+  text-decoration-line: underline;
+}
+.skills{
+  margin-left: 3%;
 }
 .WorkB {
   background-color: #ca4f37;
+  outline: 1px solid blue;
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+#caseStudy{
+  outline: 1px solid blue;
+}
+#clients{
+  outline: 1px solid blue;
 }
 .info {
   display: grid;
@@ -164,6 +204,7 @@ right: 90px;
   background: #00334f;
   padding-left: 5%;
   padding-right:5%;
+  outline: 1px solid red;
 }
 #pictureVasa{
   width: 250px;
@@ -173,9 +214,11 @@ right: 90px;
 }
 .InfoA {
   background-color: #00334f;
+  outline: 1px solid red;
 }
 .InfoB {
   background-color: #00334f;
+  outline: 1px solid red;
 }
 .contact {
   display: grid;
@@ -187,18 +230,20 @@ right: 90px;
   background: #736853;
   padding-left: 5%;
   padding-right:5%;
+  outline: 1px solid red;
 }
 .contactInfo {
   width: 50%;
   height: 50%;
   margin: auto;
   background-color: #262626;
+  outline: 1px solid red;
 }
 form {
   font-family: Helvetica, sans-serif;
 }
 h3 {
-  font-family: Helvetica, sans-serif;
+  font-family: Trade Gothic, Helvetica;
   text-align: center;
   font-size: 24px;
   font-weight: bold;
@@ -293,4 +338,3 @@ footer {
   background-color: black;
   color: white;
 }
-
