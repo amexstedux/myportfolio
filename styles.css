@@ -22,21 +22,27 @@ h1{
   font-family: Trade Gothic;
   color:#f2f2f2;
   font-size: 72px;
+  margin: 19px;
+  padding: 1px;
 }
 h2{
   font-family: Helvetica;
   color:#f2f2f2;
   font-size: 32px;
   font-weight: bold;
+  margin: 19px;
+  padding: 1px;
 }
 p{
   font-family: Proxima Nova;
   color:#f2f2f2;
   font-size: 26px;
+  margin: 19px;
+  padding: 1px;
+  
 }
 header {
   position: fixed;
-  box-sizing: border-box;
   width: 100%;
   height: 64px;
   left: 0px;
@@ -100,15 +106,15 @@ body {
   background-color: #262626;opacity: .97;
 }
 .home {
-  box-sizing: border-box;
+
   display: grid;
   grid-template-columns: 50% 50%;
   width: 100%;
   height: 1060px;
   left: 0px;
   margin-top: 64px;
-  padding-left: 5%;
-  padding-right:5%;
+  padding-left: 1%;
+  padding-right:1%;
   outline: 1px solid red;
 }
 .HomeA {
@@ -159,8 +165,8 @@ right: 90px;
   left: 0px;
   top: 1181px;
   background: #ca4f37;
-  padding-left: 5%;
-  padding-right:5%;
+  padding-left: 1%;
+  padding-right:1%;
   outline: 1px solid blue;
 }
 .WorkA {
@@ -178,6 +184,7 @@ right: 90px;
 .skillsT{
   margin-left: 10%;
   text-decoration-line: underline;
+  margin:15%;
 }
 .skills{
   margin-left: 3%;
@@ -190,6 +197,50 @@ right: 90px;
 }
 #caseStudy{
   outline: 1px solid blue;
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
+  overflow: hidden;
+  
+}
+#cstypo{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  position: relative;
+
+}
+#cair{
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 10%;
+  margin-left:30%;
+  width: 30%;
+  position: relative;
+}
+#cosmos{
+  width: 130%;
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 10%;
+  padding-right: 43%;
+  float: left;
+  position: relative;
+}
+.wButton{
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  background-color: #00334f;
+  color:#f2f2f2;
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+  bottom:0;
+  right: 0;
+ 
 }
 #clients{
   outline: 1px solid blue;
@@ -202,8 +253,8 @@ right: 90px;
   left: 0px;
   top: 2241px;
   background: #00334f;
-  padding-left: 5%;
-  padding-right:5%;
+  padding-left: 1%;
+  padding-right:1%;
   outline: 1px solid red;
 }
 #pictureVasa{
@@ -228,8 +279,8 @@ right: 90px;
   left: 0px;
   top: 3301px;
   background: #736853;
-  padding-left: 5%;
-  padding-right:5%;
+  padding-left: 1%;
+  padding-right:1%;
   outline: 1px solid red;
 }
 .contactInfo {
