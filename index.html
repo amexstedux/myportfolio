@@ -11,10 +11,12 @@
   <title>Anthony Exsted UX Designer</title>
   <link rel="icon" type="image/x-icon" href="Images/Logo1.svg">
 </head>
-<body>
+<body class="mobile">
 <header>
   <img id="logo" src="Images/signature.svg">
   <nav>
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle"> 
     <ul id="navBar">
       <li id="navEl"><a href="index.html"><img id="circle" src="Icons/Circle.svg">Home</a></li>
       <li id="navEl"><a href="work.html"><img id="circle"  src="Icons/Circle.svg">Work</a></li>
@@ -23,11 +25,11 @@
     </ul>
   </nav>
 </header>
-  <section class="home" class="column">
-    <div class="HomeA" class="column">
+  <section class="home">
+    <div class="HomeA">
         <img id="bezier" src="Images/Logo1.svg" alt="Image of Bezier Lines with gestault law of continuation and common fate, basically a wierd looking pyramid">
     </div>
-    <div class="HomeB" class="column">
+    <div class="HomeB" class="column" class="mobile">
         <a href="work.html" id="openLink"><img src="Images/typography.svg" id="openMessage" alt=" hey i am anthony exsted, a ux designer, I solve problems by understanding the user and their needs. Learn More by clciking here."></a>
         <a class="pageDown" href="#section2"><img alt="Page Down Icon" src="Icons/downarrow.svg"></a>
         <a class="pageUp" href="#section2"><img alt="Page Up Icon" src="Icons/uparrow.svg"></a>
@@ -62,25 +64,25 @@
         </ul>
       </article>
     </div>
-    <div class="WorkB">
-      <article id="caseStudy">
+    
+      <div id="caseStudy">
         <section id="cstypo">
           <h1>Case Studies</h1>
-          <p>Discover the process, stories, and conversations that shape my Human Centered Design Process</p>
+          <p>Discover the process, stories, and conversations that shape my Human Centered Design Process.</p>
           <button class="wButton">Discover</button>
         </section>
-        <article>
-          <img id="cair" src="/myportfolio/GIF/cairmn-giphy.gif" >
+        <article id="cair">
+          <img id="cairMN" src="/myportfolio/GIF/cairmn-giphy.gif" >
         </article>
-        <article>
-         <img id="cosmos"src="/myportfolio/GIF/cosmosdesktop.gif">
+        <article id="cosmos">
+         <img id="cosmosmn"src="/myportfolio/GIF/cosmosdesktop.gif">
         </article>
-      </article>
-      <article id="clients">
+      </div>
+      <div id="clients">
         <h1>Clients</h1>
 
-      </article>
-    </div>
+      </div>
+    
   </section>
   <section class="info">
     <div class="InfoA">Info</div>

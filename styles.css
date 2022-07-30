@@ -4,9 +4,7 @@ background-size: cover;
  background-repeat: no-repeat;
  overflow: scroll;
 }
-.column{
-  flex: 50%;
-}
+
 @font-face{
   font-family: Proxima Nova;
   src: url(cssfonts/proxima_nova_reg-webfont.woff)format('woff'),
@@ -58,6 +56,7 @@ header {
   margin: auto;
 }
 a:link {
+  display: flex;
   color: #f2f2f2;
   background-color: transparent;
   text-decoration: none;
@@ -80,6 +79,8 @@ a:active {
 nav {
  float:right;
  margin-top: 19px;
+ text-align: right;
+ height: 80px;
 }
 #navBar{
   margin-top: 19px;
@@ -118,32 +119,33 @@ body {
   outline: 1px solid red;
 }
 .HomeA {
-  display:flexbox;
+  display:flex;
   box-sizing: border-box;
   width: 100%;
-  float: left;
+  justify-content: end;
+  align-items: center;
   outline: 1px solid red;
 }
 .HomeB {
+  display:flex;
   box-sizing: border-box;
   width: 100%;
   float:right;
+  justify-content: flex-start;
+  align-items: center;
   outline: 1px solid red;
 }
 #bezier{
-  display: flex;
   box-sizing: border-box;
   width: 56%;
   height: auto;
-  min-width: 300px;
-  margin-top: 25%;
-  float:right;
-  margin-right: 10%;
+  min-width: 400px;
 }
 #openLink { 
   box-sizing: border-box;
-  display: flex;
-  Margin-top: 35%;
+  width: 56%;
+  height: auto;
+  min-width: 400px;
 }
 .pageDown{
 box-sizing: border-box;
@@ -161,7 +163,8 @@ right: 90px;
   display: grid;
   grid-template-columns: 25% 75%;
   width: 100%;
-  height: 1060px;
+  grid-template-areas: "skills caseStudies"
+  "skills clients";
   left: 0px;
   top: 1181px;
   background: #ca4f37;
@@ -170,64 +173,61 @@ right: 90px;
   outline: 1px solid blue;
 }
 .WorkA {
-  background-color: #ca4f37;
-  display:flexbox;
-  float:left;
   outline: 1px solid blue;
+  grid-area: skills;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 .workAarticle{
-  line-height: 24px;
+  line-height: 55px;
 }
 .skillsList{
   list-style: none;
 }
 .skillsT{
-  margin-left: 10%;
   text-decoration-line: underline;
-  margin:15%;
 }
 .skills{
-  margin-left: 3%;
+  /*empty for now*/
+  overflow: hidden;
 }
-.WorkB {
-  background-color: #ca4f37;
-  outline: 1px solid blue;
-  display: grid;
-  grid-template-rows: 50% 50%;
-}
+
 #caseStudy{
   outline: 1px solid blue;
   display: grid;
-  grid-template-columns: 20% 40% 40%;
+  grid-template-columns: 20% 30% 50%;
   overflow: hidden;
-  
+  grid-area: caseStudies;
 }
 #cstypo{
   display:flex;
-  align-items:center;
-  justify-content: center;
   flex-direction: column;
   text-align: left;
   width: 100%;
-  position: relative;
 
 }
 #cair{
   display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#cairMN{
   box-sizing: border-box;
-  margin-top: 10%;
-  margin-left:30%;
-  width: 30%;
-  position: relative;
+  width: 50%;
+  height: auto;
+}
+#cosmosmn{
+  width: 75%;
+  height:auto;
+  box-sizing: border-box;
+  float: left;
 }
 #cosmos{
-  width: 130%;
-  display: flex;
-  box-sizing: border-box;
-  margin-top: 10%;
-  padding-right: 43%;
-  float: left;
-  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .wButton{
   font-family: Helvetica, sans-serif;
@@ -237,13 +237,13 @@ right: 90px;
   color:#f2f2f2;
   border: none;
   border-radius: 10px;
-  position: absolute;
-  bottom:0;
-  right: 0;
+  align-self:flex-end;
+  justify-self:end;
  
 }
 #clients{
   outline: 1px solid blue;
+  grid-area: clients;
 }
 .info {
   display: grid;
@@ -388,4 +388,61 @@ footer {
   display: inline-flexbox;
   background-color: black;
   color: white;
+}
+@media only screen and (max-width: 1024px) {
+  .home {
+    grid-template-columns: 100%;
+    padding: 1%;
+  }
+  .HomeA{
+    box-sizing: border-box;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    outline: 1px solid red;
+  }
+  .HomeB{
+    box-sizing: border-box;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    outline: 1px solid red;
+  }
+  .work{
+    padding: 1%;
+    grid-template-columns: 100%;
+    grid-template-areas: "skills" "caseStudies" "clients";
+  }
+  #caseStudy{
+  grid-template-columns: 100%;
+  }
+  .cair{
+    padding:19px;
+  }
+  .cosmos{
+  margin: 19px;
+  }
+  .wButton{
+    margin: 72px;
+  }
+}
+#toggle{
+  display:none;
+}
+
+
+@media only screen and (max-width: 1200px;){
+    label{
+      display:block;
+      cursor: pointer;
+    }
+    .nav{
+      text-align:center;
+      width: 100%;
+
+    }
+
+  
 }
