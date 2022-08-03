@@ -1,448 +1,451 @@
+
 html{
-background-image: url(/myportfolio/Images/backgroundoverlay2.svg);
-background-size: cover;
- background-repeat: no-repeat;
- overflow: scroll;
-}
-
-@font-face{
-  font-family: Proxima Nova;
-  src: url(cssfonts/proxima_nova_reg-webfont.woff)format('woff'),
-  url(cssfonts/proxima_nova_reg-webfont.woff2)format('woff2');
-}
-@font-face{
-  font-family: Trade Gothic;
-  src: url(cssfonts/TradeGothicNextRust-Heavy.woff)format('woff'),
-  url(cssfonts/TradeGothicNextRust-Heavy.woff2)format('woff2');
-
-}
-h1{
-  font-family: Trade Gothic;
-  color:#f2f2f2;
-  font-size: 72px;
-  margin: 19px;
-  padding: 1px;
-}
-h2{
-  font-family: Helvetica;
-  color:#f2f2f2;
-  font-size: 32px;
-  font-weight: bold;
-  margin: 19px;
-  padding: 1px;
-}
-p{
-  font-family: Proxima Nova;
-  color:#f2f2f2;
-  font-size: 26px;
-  margin: 19px;
-  padding: 1px;
+  background-image: url(/myportfolio/Images/backgroundoverlay2.svg);
+  background-size: cover;
+   background-repeat: no-repeat;
+   overflow: scroll;
+  }
   
-}
-header {
-  position: fixed;
-  width: 100%;
-  height: 64px;
-  left: 0px;
-  top: 0px;
-  background: #262626;
-  overflow: hidden;
-}
-#logo {
-  display: inline-flex;
-  margin-top: 19px;
-  height: 64px;
-  width: auto;
-  margin: auto;
-}
-a:link {
+  @font-face{
+    font-family: Proxima Nova;
+    src: url(cssfonts/proxima_nova_reg-webfont.woff)format('woff'),
+    url(cssfonts/proxima_nova_reg-webfont.woff2)format('woff2');
+  }
+  @font-face{
+    font-family: Trade Gothic;
+    src: url(cssfonts/TradeGothicNextRust-Heavy.woff)format('woff'),
+    url(cssfonts/TradeGothicNextRust-Heavy.woff2)format('woff2');
+  
+  }
+  h1{
+    font-family: Trade Gothic;
+    color:#f2f2f2;
+    font-size: 72px;
+    margin: 19px;
+    padding: 1px;
+  }
+  h2{
+    font-family: Helvetica;
+    color:#f2f2f2;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 19px;
+    padding: 1px;
+  }
+  p{
+    font-family: Proxima Nova;
+    color:#f2f2f2;
+    font-size: 26px;
+    margin: 19px;
+    padding: 1px;
+    
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    height: 64px;
+    left: 0px;
+    top: 0px;
+    background: #262626;
+    overflow: hidden;
+  }
+  #logo {
+    float: left;
+  }
+  a:link {
+    display: flex;
+    color: #f2f2f2;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #f2f2f2;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:visited {
+    color: #f2f2f2;
+    background-color: transparent;
+    text-decoration: none;}
+  
+  a:active {
+    color: #ca4f37;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  #menuIcon{
+    display: none;
+  }
+  #toggle{
+    display: none;
+  }
+  nav {
   display: flex;
-  color: #f2f2f2;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:hover {
-  color: #f2f2f2;
-  background-color: transparent;
-  text-decoration: underline;
-}
-a:visited {
-  color: #f2f2f2;
-  background-color: transparent;
-  text-decoration: none;}
-
-a:active {
-  color: #ca4f37;
-  background-color: transparent;
-  text-decoration: underline;
-}
-nav {
- float:right;
- margin-top: 19px;
- text-align: right;
- height: 80px;
-}
-#navBar{
-  margin-top: 19px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-#circle{
-  align-items: center;
-  width:24px;
-  margin-right: 19px;
-}
-#navEl{
-  display:inline-flex;
-  margin-left: 19px;
-  margin-right: 19px;
-  font-family: 'Helvetica';
-  font-size: 24px;
-} 
-body {
-  box-sizing: border-box;
-  overflow: scroll;
-  width:100%;
-  background-color: #262626;opacity: .97;
-}
-.home {
-
-  display: grid;
-  grid-template-columns: 50% 50%;
-  width: 100%;
-  height: 1060px;
-  left: 0px;
-  margin-top: 64px;
-  padding-left: 1%;
-  padding-right:1%;
-  outline: 1px solid red;
-}
-.HomeA {
-  display:flex;
-  box-sizing: border-box;
-  width: 100%;
-  justify-content: end;
-  align-items: center;
-  outline: 1px solid red;
-}
-.HomeB {
-  display:flex;
-  box-sizing: border-box;
-  width: 100%;
-  float:right;
-  justify-content: flex-start;
-  align-items: center;
-  outline: 1px solid red;
-}
-#bezier{
-  box-sizing: border-box;
-  width: 56%;
-  height: auto;
-  min-width: 400px;
-}
-#openLink { 
-  box-sizing: border-box;
-  width: 56%;
-  height: auto;
-  min-width: 400px;
-}
-.pageDown{
-box-sizing: border-box;
-position: fixed;
-bottom:90px;
-right: 90px;
-}
-.pageUp{
+   float:right;
+   align-items: center;
+   height: 64px;
+  }
+  #navBar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  #circle{
+    align-items: center;
+    width:24px;
+    margin-right: 19px;
+  }
+  #navEl{
+    margin-left: 19px;
+    margin-right: 19px;
+    font-family: 'Helvetica';
+    font-size: 24px;
+  } 
+  body {
+    box-sizing: border-box;
+    overflow: scroll;
+    width:100%;
+    background-color: #262626;opacity: .97;
+  }
+  .home {
+  
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    height: 1060px;
+    left: 0px;
+    margin-top: 64px;
+    padding-left: 1%;
+    padding-right:1%;
+    outline: 1px solid red;
+  }
+  .HomeA {
+    display:flex;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    outline: 1px solid red;
+  }
+  .HomeB {
+    display:flex;
+    box-sizing: border-box;
+    width: 100%;
+    float:right;
+    justify-content: flex-start;
+    align-items: center;
+    outline: 1px solid red;
+  }
+  #bezier{
+    box-sizing: border-box;
+    width: 56%;
+    height: auto;
+    min-width: 400px;
+  }
+  #openLink { 
+    box-sizing: border-box;
+    width: 56%;
+    height: auto;
+    min-width: 400px;
+  }
+  .pageDown{
   box-sizing: border-box;
   position: fixed;
-  bottom:150px;
+  bottom:90px;
   right: 90px;
   }
-.work {
-  display: grid;
-  grid-template-columns: 25% 75%;
-  width: 100%;
-  grid-template-areas: "skills caseStudies"
-  "skills clients";
-  left: 0px;
-  top: 1181px;
-  background: #ca4f37;
-  padding-left: 1%;
-  padding-right:1%;
-  outline: 1px solid blue;
-}
-.WorkA {
-  outline: 1px solid blue;
-  grid-area: skills;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.workAarticle{
-  line-height: 55px;
-}
-.skillsList{
-  list-style: none;
-}
-.skillsT{
-  text-decoration-line: underline;
-}
-.skills{
-  /*empty for now*/
-  overflow: hidden;
-}
-
-#caseStudy{
-  outline: 1px solid blue;
-  display: grid;
-  grid-template-columns: 20% 30% 50%;
-  overflow: hidden;
-  grid-area: caseStudies;
-}
-#cstypo{
-  display:flex;
-  flex-direction: column;
-  text-align: left;
-  width: 100%;
-
-}
-#cair{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-#cairMN{
-  box-sizing: border-box;
-  width: 50%;
-  height: auto;
-}
-#cosmosmn{
-  width: 75%;
-  height:auto;
-  box-sizing: border-box;
-  float: left;
-}
-#cosmos{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-.wButton{
-  font-family: Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 32px;
-  background-color: #00334f;
-  color:#f2f2f2;
-  border: none;
-  border-radius: 10px;
-  align-self:flex-end;
-  justify-self:end;
- 
-}
-#clients{
-  outline: 1px solid blue;
-  grid-area: clients;
-}
-.info {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  width: 100%;
-  height: 1060px;
-  left: 0px;
-  top: 2241px;
-  background: #00334f;
-  padding-left: 1%;
-  padding-right:1%;
-  outline: 1px solid red;
-}
-#pictureVasa{
-  width: 250px;
-  align-self: center;
-  justify-self: center;
-
-}
-.InfoA {
-  background-color: #00334f;
-  outline: 1px solid red;
-}
-.InfoB {
-  background-color: #00334f;
-  outline: 1px solid red;
-}
-.contact {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 100%;
-  height: 1060px;
-  left: 0px;
-  top: 3301px;
-  background: #736853;
-  padding-left: 1%;
-  padding-right:1%;
-  outline: 1px solid red;
-}
-.contactInfo {
-  width: 50%;
-  height: 50%;
-  margin: auto;
-  background-color: #262626;
-  outline: 1px solid red;
-}
-form {
-  font-family: Helvetica, sans-serif;
-}
-h3 {
-  font-family: Trade Gothic, Helvetica;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-}
-input[type="text"],
-select,
-[type="tel"],
-[type="email"],
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 3px solid #736853;
-  border-radius: 5px;
-  box-sizing: border-box;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  resize: vertical;
-}
-
-input[type="submit"] {
-  background-color: #ca4f37;
-  color: white;
-  padding: 12px 20px;
-
-  border-radius: 5px;
-  border: 3px solid #736853;
-
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #f2f2f2;
-  color: #262626;
-}
-
-#container {
-  width: 500px;
-  height: 65%;
-  border-radius: 5px;
-  background-color: #262626;
-  padding: 1%;
-  color: #f2f2f2;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#emailPhonebox {
-  display: inline-block;
-}
-
-#fname {
-  display: block;
-  width: 500px;
-  height: 24px;
-}
-#contactP {
-  display: block;
-  width: 500px;
-}
-
-#Phone {
-  display: block;
-  width: 500px;
-  height: 24px;
-}
-#email {
-  display: block;
-  width: 500px;
-  height: 24px;
-}
-#message {
-  display: block;
-  height: 200px;
-  width: 500px;
-}
-
-.footerNav {
-  box-sizing: border-box;
-  width: 100%;
-  height: 76px;
-  left: 0px;
-  top: 4467px;
-  background: #f2f2f2;
-  border: 3px solid #262626;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-footer {
-  display: inline-flexbox;
-  background-color: black;
-  color: white;
-}
-@media only screen and (max-width: 1024px) {
-  .home {
-    grid-template-columns: 100%;
-    padding: 1%;
-  }
-  .HomeA{
+  .pageUp{
     box-sizing: border-box;
-    width:100%;
+    position: fixed;
+    bottom:150px;
+    right: 90px;
+    }
+  .work {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    width: 100%;
+    grid-template-areas: "skills caseStudies"
+    "skills clients";
+    left: 0px;
+    top: 1181px;
+    background: #ca4f37;
+    padding-left: 1%;
+    padding-right:1%;
+    outline: 1px solid blue;
+  }
+  .WorkA {
+    outline: 1px solid blue;
+    grid-area: skills;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .workAarticle{
+    line-height: 55px;
+  }
+  .skillsList{
+    list-style: none;
+  }
+  .skillsT{
+    text-decoration-line: underline;
+  }
+  .skills{
+    /*empty for now*/
+    overflow: hidden;
+  }
+  
+  #caseStudy{
+    outline: 1px solid blue;
+    display: grid;
+    grid-template-columns: 20% 30% 50%;
+    overflow: hidden;
+    grid-area: caseStudies;
+  }
+  #cstypo{
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+  
+  }
+  #cair{
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    outline: 1px solid red;
+    align-items: center;
+  
   }
-  .HomeB{
+  #cairMN{
     box-sizing: border-box;
-    width:100%;
+    width: 50%;
+    height: auto;
+  }
+  #cosmosmn{
+    width: 75%;
+    height:auto;
+    box-sizing: border-box;
+    float: left;
+  }
+  #cosmos{
     display:flex;
     justify-content: center;
-    align-items: flex-start;
-    outline: 1px solid red;
-  }
-  .work{
-    padding: 1%;
-    grid-template-columns: 100%;
-    grid-template-areas: "skills" "caseStudies" "clients";
-  }
-  #caseStudy{
-  grid-template-columns: 100%;
-  }
-  .cair{
-    padding:19px;
-  }
-  .cosmos{
-  margin: 19px;
+    align-items: center;
   }
   .wButton{
-    margin: 72px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    background-color: #00334f;
+    color:#f2f2f2;
+    border: none;
+    border-radius: 10px;
+    align-self:flex-end;
+    justify-self:end;
+   
   }
-}
-#toggle{
-  display:none;
-}
-
-
-@media only screen and (max-width: 1200px;){
-    label{
-      display:block;
-      cursor: pointer;
-    }
-    .nav{
-      text-align:center;
-      width: 100%;
-
-    }
-
+  #clients{
+    outline: 1px solid blue;
+    grid-area: clients;
+  }
+  .info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    height: 1060px;
+    left: 0px;
+    top: 2241px;
+    background: #00334f;
+    padding-left: 1%;
+    padding-right:1%;
+    outline: 1px solid red;
+  }
+  #pictureVasa{
+    width: 250px;
+    align-self: center;
+    justify-self: center;
   
-}
+  }
+  .InfoA {
+    background-color: #00334f;
+    outline: 1px solid red;
+  }
+  .InfoB {
+    background-color: #00334f;
+    outline: 1px solid red;
+  }
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 1060px;
+    left: 0px;
+    top: 3301px;
+    background: #736853;
+    padding-left: 1%;
+    padding-right:1%;
+    outline: 1px solid red;
+  }
+  .contactInfo {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    background-color: #262626;
+    outline: 1px solid red;
+  }
+  form {
+    font-family: Helvetica, sans-serif;
+  }
+  h3 {
+    font-family: Trade Gothic, Helvetica;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  input[type="text"],
+  select,
+  [type="tel"],
+  [type="email"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 3px solid #736853;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    resize: vertical;
+  }
+  
+  input[type="submit"] {
+    background-color: #ca4f37;
+    color: white;
+    padding: 12px 20px;
+  
+    border-radius: 5px;
+    border: 3px solid #736853;
+  
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #f2f2f2;
+    color: #262626;
+  }
+  
+  #container {
+    width: 500px;
+    height: 65%;
+    border-radius: 5px;
+    background-color: #262626;
+    padding: 1%;
+    color: #f2f2f2;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #emailPhonebox {
+    display: inline-block;
+  }
+  
+  #fname {
+    display: block;
+    width: 500px;
+    height: 24px;
+  }
+  #contactP {
+    display: block;
+    width: 500px;
+  }
+  
+  #Phone {
+    display: block;
+    width: 500px;
+    height: 24px;
+  }
+  #email {
+    display: block;
+    width: 500px;
+    height: 24px;
+  }
+  #message {
+    display: block;
+    height: 200px;
+    width: 500px;
+  }
+  
+  .footerNav {
+    box-sizing: border-box;
+    width: 100%;
+    height: 76px;
+    left: 0px;
+    top: 4467px;
+    background: #f2f2f2;
+    border: 3px solid #262626;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  footer {
+    display: inline-flexbox;
+    background-color: black;
+    color: white;
+  }
+  @media only screen and (max-width: 1024px) and (min-width: 650px){
+    .home {
+      grid-template-columns: 100%;
+      padding: 1%;
+    }
+    .HomeA{
+      box-sizing: border-box;
+      width:100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      outline: 1px solid red;
+    }
+    .HomeB{
+      box-sizing: border-box;
+      width:100%;
+      display:flex;
+      justify-content: center;
+      align-items: flex-start;
+      outline: 1px solid red;
+    }
+    .work{
+      padding: 1%;
+      grid-template-columns: 100%;
+      grid-template-areas: "skills" "caseStudies" "clients";
+    }
+    #caseStudy{
+    grid-template-columns: 100%;
+    }
+    .cair{
+      padding:19px;
+    }
+    .cosmos{
+    margin: 19px;
+    }
+    .wButton{
+      margin: 72px;
+    }
+    /*This is where the hamburger menu starts*/
+    #header{
+      height: 120px;
+      outline: 1px solid red;
+    }
+    nav{
+      height: 100px;
+    }
+    #menuIcon{
+      display: block;
+      margin-right: 24px;
+    }
+    nav li{
+      display: none;
+    }
+    
+      /*This is where the hamburger menu ends*/
+  }
