@@ -165,7 +165,7 @@ html{
     }
   .work {
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 20% 80%;
     width: 100%;
     grid-template-areas: "skills caseStudies"
     "skills clients";
@@ -182,6 +182,8 @@ html{
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   .workAarticle{
     line-height: 55px;
@@ -201,12 +203,14 @@ html{
     outline: 1px solid blue;
     display: grid;
     grid-template-columns: 20% 30% 50%;
-    overflow: hidden;
+    overflow: visible;
     grid-area: caseStudies;
   }
   #cstypo{
     display:flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: left;
     width: 100%;
   
