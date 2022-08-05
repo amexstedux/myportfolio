@@ -1,0 +1,143 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+    @font-face{
+      font-family: Proxima Nova;
+      src: url(cssfonts/proxima_nova_reg-webfont.woff)format('woff'),
+      url(cssfonts/proxima_nova_reg-webfont.woff2)format('woff2');
+    }
+    @font-face{
+      font-family: Trade Gothic;
+      src: url(cssfonts/TradeGothicNextRust-Heavy.woff)format('woff'),
+      url(cssfonts/TradeGothicNextRust-Heavy.woff2)format('woff2');
+    
+    }
+    h1{
+      font-family: Trade Gothic;
+      text-decoration: underline;
+      color:#f2f2f2;
+      font-size: 72px;
+      margin: 19px;
+      padding: 1px;
+    }
+    h2{
+      font-family: Helvetica;
+      color:#f2f2f2;
+      font-size: 32px;
+      font-weight: bold;
+      margin: 19px;
+      padding: 1px;
+    }
+    p{
+      font-family: Proxima Nova;
+      color:#f2f2f2;
+      font-size: 24px;
+      margin: 19px;
+      padding: 1px;
+      
+    }
+    header {
+      position: fixed;
+      width: 100%;
+      height: 64px;
+      left: 0px;
+      top: 0px;
+      background: #262626;
+      overflow: hidden;
+    }
+    #logo {
+      float: left;
+    }
+    a:link {
+      display: flex;
+      color: #f2f2f2;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #f2f2f2;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #f2f2f2;
+      background-color: transparent;
+      text-decoration: none;}
+    
+    a:active {
+      color: #ca4f37;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    #menuIcon{
+      display: none;
+      
+    }
+    #toggle{
+      display: none;
+    }
+    nav {
+    display: flex;
+     float:right;
+     align-items: center;
+     height: 64px;
+    }
+    #navBar{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .circle{
+      align-items: center;
+      width:24px;
+      margin-right: 19px;
+    }
+    #navEl{
+      margin-left: 19px;
+      margin-right: 19px;
+      font-family: 'Helvetica';
+      font-size: 24px;
+    } 
+    body {
+      box-sizing: border-box;
+      overflow: scroll;
+      width:100%;
+    }
+    #workPage{
+      background-image: url(/myportfolio/Images/orangebackground.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: scroll;
+      
+      margin-top: 64px;
+      outline: 3px solid red;
+    }
+    .spaceMaker{
+      margin:24px;
+    }
+    .col-sm{
+      margin: 24px 0;
+    }
+    .card{
+      background-color: #00334F;
+      border-color: 3px solid #736853;
+      min-height: 705px;
+      display: flex;
+    }
+    .card-body{
+      background-color: #00334F;
+      display:flex;
+      flex-direction: column;
+    }
+
+.mr-3{
+  max-width: 200px;
+}
+.card a{
+ background-color: #00334F;
+ border-color: #736853;
+}
+

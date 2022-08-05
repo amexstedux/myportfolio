@@ -1,11 +1,3 @@
-
-html{
-  background-image: url(/myportfolio/Images/backgroundoverlay2.svg);
-  background-size: cover;
-   background-repeat: no-repeat;
-   overflow: scroll;
-  }
-  
   @font-face{
     font-family: Proxima Nova;
     src: url(cssfonts/proxima_nova_reg-webfont.woff)format('woff'),
@@ -19,6 +11,7 @@ html{
   }
   h1{
     font-family: Trade Gothic;
+    text-decoration: underline;
     color:#f2f2f2;
     font-size: 72px;
     margin: 19px;
@@ -75,6 +68,7 @@ html{
   }
   #menuIcon{
     display: none;
+    
   }
   #toggle{
     display: none;
@@ -93,7 +87,7 @@ html{
     margin: 0;
     padding: 0;
   }
-  #circle{
+  .circle{
     align-items: center;
     width:24px;
     margin-right: 19px;
@@ -108,10 +102,9 @@ html{
     box-sizing: border-box;
     overflow: scroll;
     width:100%;
-    background-color: #262626;opacity: .97;
   }
   .home {
-  
+    background-image: url(/myportfolio/Images/blackbackground.svg);
     display: grid;
     grid-template-columns: 50% 50%;
     width: 100%;
@@ -154,7 +147,7 @@ html{
   .pageDown{
   box-sizing: border-box;
   position: fixed;
-  bottom:90px;
+  bottom: 90px;
   right: 90px;
   }
   .pageUp{
@@ -171,7 +164,7 @@ html{
     "skills clients";
     left: 0px;
     top: 1181px;
-    background: #ca4f37;
+    background-image: url(/myportfolio/Images/orangebackground.svg);
     padding-left: 1%;
     padding-right:1%;
     outline: 1px solid blue;
@@ -202,7 +195,7 @@ html{
   #caseStudy{
     outline: 1px solid blue;
     display: grid;
-    grid-template-columns: 20% 30% 50%;
+    grid-template-columns: 35% 65%;
     overflow: visible;
     grid-area: caseStudies;
   }
@@ -214,17 +207,6 @@ html{
     text-align: left;
     width: 100%;
   
-  }
-  #cair{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-  }
-  #cairMN{
-    box-sizing: border-box;
-    width: 50%;
-    height: auto;
   }
   #cosmosmn{
     width: 75%;
@@ -260,7 +242,7 @@ html{
     height: 1060px;
     left: 0px;
     top: 2241px;
-    background: #00334f;
+    background-image: url(/myportfolio/Images/bluebackground.svg);
     padding-left: 1%;
     padding-right:1%;
     outline: 1px solid red;
@@ -286,7 +268,7 @@ html{
     height: 1060px;
     left: 0px;
     top: 3301px;
-    background: #736853;
+    background-image: url(/myportfolio/Images/bronzebackground.svg);
     padding-left: 1%;
     padding-right:1%;
     outline: 1px solid red;
@@ -397,7 +379,7 @@ html{
     background-color: black;
     color: white;
   }
-  @media only screen and (max-width: 1024px) and (min-width: 650px){
+  @media only screen and (max-width: 1024px) and (min-width: 768px){
     .home {
       grid-template-columns: 100%;
       padding: 1%;
@@ -433,15 +415,26 @@ html{
     margin: 19px;
     }
     .wButton{
-      margin: 72px;
+      margin: 90px;
+    }
+    .pageDown{
+      box-sizing: border-box;
+      position: fixed;
+      margin-right: -7%;
+
+    }
+    .pageUp{
+      box-sizing: border-box;
+      position: fixed;
+      margin-right: -7%;
     }
     /*This is where the hamburger menu starts*/
-    #header{
-      height: 120px;
+    header{
+      height: 72px;
       outline: 1px solid red;
     }
     nav{
-      height: 100px;
+      height: 72px;
     }
     #menuIcon{
       display: block;
@@ -450,6 +443,7 @@ html{
     nav li{
       display: none;
     }
+
     
       /*This is where the hamburger menu ends*/
   }
