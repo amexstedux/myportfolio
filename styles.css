@@ -106,6 +106,9 @@
     overflow: scroll;
     width:100%;
   }
+  #sec-1{
+    position: relative;
+  }
   .home {
     background-image: url(/myportfolio/Images/blackbackground.svg);
     display: grid;
@@ -147,13 +150,24 @@
     height: auto;
     min-width: 400px;
   }
-  .pageDown1{
+  .pageUp{
+    outline: solid blue;
+    box-sizing: border-box;
+    position: fixed;
+    bottom:150px;
+    right: 90px;
+    z-index: 99;
+    cursor: pointer;
+    }
+  .pageDown{
+    outline: solid blue;
   box-sizing: border-box;
-  position: absolute;
+  position: fixed;
   bottom: 90px;
   right: 90px;
+  z-index: 99;
+  cursor: pointer;
   }
-  
   .work {
     display: grid;
     grid-template-columns: 20% 80%;
@@ -193,7 +207,7 @@
   #caseStudy{
     outline: 1px solid blue;
     display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 30% 60% 10%;
     overflow: visible;
     grid-area: caseStudies;
   }
@@ -230,6 +244,7 @@
    
   }
   #clients{
+    
     outline: 1px solid blue;
     grid-area: clients;
     outline: 3px solid red;

@@ -12,6 +12,16 @@
   <title>Anthony Exsted UX Designer</title>
   <link rel="icon" type="image/x-icon" href="Images/Logo1.svg">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-53QV71T0W9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-53QV71T0W9');
+</script>
+<!--google tag end-->
 <body class="mobile">
 <header>
   <img id="logo" src="Images/signature.svg">
@@ -29,17 +39,18 @@
     </div>
   </nav>
 </header>
-  <section class="home" id="home">
+  <section class="home" id="sec-1">
     <div class="HomeA">
         <img id="bezier" src="Images/Logo1.svg" alt="Image of Bezier Lines with gestault law of continuation and common fate, basically a wierd looking pyramid">
     </div>
     <div class="HomeB" class="column" class="mobile">
         <a href="work.html" id="openLink"><img src="Images/typography.svg" id="openMessage" alt=" hey i am anthony exsted, a ux designer, I solve problems by understanding the user and their needs. Learn More by clciking here."></a>
-        <a class="pageDown1" href="#work"><img alt="Page Down Icon" src="Icons/downarrow.svg"></a>
+        <a class="pageUp"  onclick="topFunction()"  id="myBtn"><img alt="page up icon" src="Icons/uparrow.svg"></a>
+        <a class="pageDown" onclick="byFunction()" id="myBtn2" ><img alt="Page Down Icon" src="Icons/downarrow.svg"></a>
         
     </div>
   </section>
-  <section id="work" class="work">
+  <section class="work" id="sec-2">
     <div class="WorkA">
       <article class="workAarticle">
         <H1 class="skillsT">UX</H1>
@@ -83,16 +94,17 @@
       <div id="clients">
         <h1>Clients</h1>
         
+        
 
       </div>
     
   </section>
-  <section class="info">
+  <section class="info" id="sec-3">
     <div class="InfoA">Info</div>
     <img src="Images/IMG_0668.JPG" id="pictureVasa" alt="Image of a mixed race male, standing infront of a 17th century Swedish Warship at the vasa museum.">
     <div class="InfoB">Info</div>
   </section>
-  <section class="contact">
+  <section class="contact" id="sec-4">
     <div id="container" class="contactInfo">
         <h3>Contact Form</h3>
         <form action="/action_page.php">
