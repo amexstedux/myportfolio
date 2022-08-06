@@ -102,23 +102,46 @@
       font-size: 24px;
     } 
     body {
+      background-color: #f2f2f2;
       background-image: url(/myportfolio/Images/whitebackground.svg);
       box-sizing: border-box;
       overflow: scroll;
       width:100%;
     }
-    .breadcrumbs{
+.breadcrumbs{
       color:#262626;
       display:flex;
       justify-content: start;
       margin-top:80px;
       margin-left: 24px;
     }
+.sideBar{
+      position:fixed;
+    }
 h1.display-4{
   color:#262626
 }
 h2.lead{
 color:#262626;
+}
+.titleTert{
+  color:#262626
+}
+.subTitle{
+  font-size: calc(1.475rem + 2.7vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+.sh2{
+  color:#262626;
+}
+.p2{
+  color: #262626;
+}
+.p3{
+  color:#262626;
+  font-size: 18px;
+  
 }
  .mainTitle{
       color:#262626;
@@ -131,7 +154,19 @@ color:#262626;
       text-align: center;
       Margin: 19px 25%;
     }
+
 .problemStage{
-  border-top:3px solid #736853;
-      background-color: #262626;
+  border-top:5px solid #736853;
+  background-color: #262626;
+      background-image: url(/myportfolio/Images/blackbackground.svg);
     }
+.ideationStage{
+      border-top: 5px solid #736853;
+      background-color: #f2f2f2;
+      background-image: url(/myportfolio/Images/whitebackground.svg);
+    }
+.ideationStage2{
+  border-top:5px solid #736853;
+  background-color: #262626;
+  background-image: url(/myportfolio/Images/blackbackground.svg);
+}
