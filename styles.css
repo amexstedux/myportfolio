@@ -1,4 +1,7 @@
-  @font-face{
+ html{
+  scroll-behavior: smooth;
+ }
+ @font-face{
     font-family: Proxima Nova;
     src: url(cssfonts/proxima_nova_reg-webfont.woff)format('woff'),
     url(cssfonts/proxima_nova_reg-webfont.woff2)format('woff2');
@@ -144,18 +147,13 @@
     height: auto;
     min-width: 400px;
   }
-  .pageDown{
+  .pageDown1{
   box-sizing: border-box;
-  position: fixed;
+  position: absolute;
   bottom: 90px;
   right: 90px;
   }
-  .pageUp{
-    box-sizing: border-box;
-    position: fixed;
-    bottom:150px;
-    right: 90px;
-    }
+  
   .work {
     display: grid;
     grid-template-columns: 20% 80%;
@@ -234,7 +232,9 @@
   #clients{
     outline: 1px solid blue;
     grid-area: clients;
+    outline: 3px solid red;
   }
+ 
   .info {
     display: grid;
     grid-template-columns: 50% 50%;
