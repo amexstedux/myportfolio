@@ -44,6 +44,7 @@
     top: 0px;
     background: #262626;
     overflow: hidden;
+    z-index: 10;
   }
   #logo {
     float: left;
@@ -106,9 +107,6 @@
     overflow: scroll;
     width:100%;
   }
-  #sec-1{
-    position: relative;
-  }
   .home {
     background-image: url(/myportfolio/Images/blackbackground.svg);
     display: grid;
@@ -142,7 +140,7 @@
     box-sizing: border-box;
     width: 56%;
     height: auto;
-    min-width: 400px;
+    min-width: 350px;
   }
   #openLink { 
     box-sizing: border-box;
@@ -150,6 +148,51 @@
     height: auto;
     min-width: 400px;
   }
+  .scroll-down{
+    height: 72px;
+    width: 54px;
+    border: 3px solid #f2f2f2;
+    position:absolute; 
+    margin-top:18%;
+    left:50%;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 1;
+  }
+    .scroll-down::before,
+    .scroll-down::after{
+      content:'';
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      border: 3px solid #736853;
+      height: 20px;
+      width: 20px;
+      transform: translate(-50%, -100%) rotate(45deg);
+      border-top: transparent;
+      border-left: transparent;
+      animation: scroll-down 1s ease-in-out infinite;
+    }
+      .scroll-down::after{
+        top: 30%;
+        animation-delay: .3s;
+      }
+      @keyframes scroll-down{
+        0%{
+          opacity: 0;
+        }
+        30%{
+          opacity: 1;
+        }
+        60%{
+          opacity: 1;
+        }
+        100%{
+          opacity: 0;
+          top: 90%;
+        }
+      }
+  /*
   .pageUp{
     outline: solid blue;
     box-sizing: border-box;
@@ -167,7 +210,7 @@
   right: 90px;
   z-index: 99;
   cursor: pointer;
-  }
+  }*/
   .work {
     display: grid;
     grid-template-columns: 20% 80%;
@@ -180,9 +223,10 @@
     padding-left: 1%;
     padding-right:1%;
     outline: 1px solid blue;
+    
   }
   .WorkA {
-    outline: 1px solid blue;
+    outline: 1px solid green;
     grid-area: skills;
     display: flex;
     flex-direction: column;
@@ -191,7 +235,7 @@
     justify-content: center;
   }
   .workAarticle{
-    line-height: 55px;
+    line-height: 24px;
   }
   .skillsList{
     list-style: none;
@@ -214,11 +258,10 @@
   #cstypo{
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    text-align: left;
+    text-align: center;
     width: 100%;
-  
   }
   #cosmosmn{
     width: 75%;
@@ -239,15 +282,13 @@
     color:#f2f2f2;
     border: none;
     border-radius: 10px;
-    align-self:flex-end;
-    justify-self:end;
-   
   }
   #clients{
-    
     outline: 1px solid blue;
     grid-area: clients;
-    outline: 3px solid red;
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+    overflow: visible;
   }
  
   .info {
@@ -415,13 +456,19 @@
       align-items: flex-start;
       outline: 1px solid red;
     }
+    .scroll-down{
+      margin-top: 35%;
+    }
     .work{
       padding: 1%;
       grid-template-columns: 100%;
       grid-template-areas: "skills" "caseStudies" "clients";
     }
     #caseStudy{
+    display: flex;
     grid-template-columns: 100%;
+    align-items: center;
+    justify-content: center;
     }
     .cair{
       padding:19px;
@@ -458,7 +505,10 @@
     nav li{
       display: none;
     }
-
+    label{
+      display: block;
+      cursor: pointer;
+    }
     
       /*This is where the hamburger menu ends*/
   }
