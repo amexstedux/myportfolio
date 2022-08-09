@@ -108,7 +108,9 @@
     width:100%;
   }
   .home {
-    background-image: url(/myportfolio/Images/blackbackground.svg);
+    background-image: url(myportfolio/Images/blackbackground.svg);
+    background-size: cover;
+    background-color: #262626;
     display: grid;
     grid-template-columns: 50% 50%;
     width: 100%;
@@ -216,7 +218,9 @@
     "skills clients";
     left: 0px;
     top: 1181px;
-    background-image: url(/myportfolio/Images/orangebackground.svg);
+    background-image: url(myportfolio/Images/orangebackground.svg);
+    background-size: cover;
+    background-color: #ca4f37;
     padding-left: 1%;
     padding-right:1%;
     
@@ -303,7 +307,9 @@
     height: 1060px;
     left: 0px;
     top: 2241px;
-    background-image: url(/myportfolio/Images/bluebackground.svg);
+    background-image: url(myportfolio/Images/bluebackground.svg);
+    background-size: cover;
+    background-color: #00334f;
     padding-left: 1%;
     padding-right:1%;
     outline: 1px solid red;
@@ -329,7 +335,9 @@
     height: 1060px;
     left: 0px;
     top: 3301px;
-    background-image: url(/myportfolio/Images/bronzebackground.svg);
+    background-image: url(myportfolio/Images/bronzebackground.svg);
+    background-size: cover;
+    background-color: #736853;
     padding-left: 1%;
     padding-right:1%;
     outline: 1px solid red;
