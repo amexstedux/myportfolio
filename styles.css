@@ -117,7 +117,6 @@
     margin-top: 64px;
     padding-left: 1%;
     padding-right:1%;
-    outline: 1px solid red;
   }
   .HomeA {
     display:flex;
@@ -125,7 +124,6 @@
     width: 100%;
     justify-content: end;
     align-items: center;
-    outline: 1px solid red;
   }
   .HomeB {
     display:flex;
@@ -134,7 +132,6 @@
     float:right;
     justify-content: flex-start;
     align-items: center;
-    outline: 1px solid red;
   }
   #bezier{
     box-sizing: border-box;
@@ -222,11 +219,9 @@
     background-image: url(/myportfolio/Images/orangebackground.svg);
     padding-left: 1%;
     padding-right:1%;
-    outline: 1px solid blue;
     
   }
   .WorkA {
-    outline: 1px solid green;
     grid-area: skills;
     display: flex;
     flex-direction: column;
@@ -249,7 +244,6 @@
   }
   
   #caseStudy{
-    outline: 1px solid blue;
     display: grid;
     grid-template-columns: 30% 60% 10%;
     overflow: visible;
@@ -258,7 +252,7 @@
   #cstypo{
     display:flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     text-align: center;
     width: 100%;
@@ -284,10 +278,17 @@
     border-radius: 10px;
   }
   #clients{
-    outline: 1px solid blue;
     grid-area: clients;
     display: grid;
     grid-template-columns: 30% 60% 10%;
+  }
+  #clientTypo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
   }
     #rbDrill{
       width: 45%;
@@ -458,7 +459,6 @@
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      outline: 1px solid red;
     }
     .HomeB{
       box-sizing: border-box;
@@ -466,7 +466,6 @@
       display:flex;
       justify-content: center;
       align-items: flex-start;
-      outline: 1px solid red;
     }
     .scroll-down{
       margin-top: 29%;
@@ -505,7 +504,6 @@
     /*This is where the hamburger menu starts*/
     header{
       height: 72px;
-      outline: 1px solid red;
     }
     nav{
       height: 72px;
@@ -535,7 +533,6 @@
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      outline: 1px solid red;
     }
     .HomeB{
       box-sizing: border-box;
@@ -543,7 +540,6 @@
       display:flex;
       justify-content: center;
       align-items: flex-start;
-      outline: 1px solid red;
     }
     #openMessage{
       width: 90%;
@@ -596,7 +592,6 @@
     /*This is where the hamburger menu starts*/
     header{
       height: 72px;
-      outline: 1px solid red;
     }
     nav{
       height: 72px;
@@ -615,5 +610,95 @@
     
       /*This is where the hamburger menu ends*/
   }
+  @media only screen and (max-width: 480px) and (min-width: 320px){
+    .home {
+      grid-template-columns: 100%;
+      padding: 0px;
+    }
+    .HomeA{
+      box-sizing: border-box;
+      width:100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+    .HomeB{
+      box-sizing: border-box;
+      width:100%;
+      display:flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    #openMessage{
+      width: 90%;
+      align-self: center;
+    }
+    .scroll-down{
+      margin-top: 70%;
+    }
+    .work{
+      padding: 0px;
+      grid-template-columns: 100%;
+      grid-template-areas: "skills" "caseStudies" "clients";
+    }
+    #caseStudy{
+    display: flex;
+    flex-direction: column;
+    grid-area: "caseStudies";
+    align-items: center;
+    justify-content: center;
+    }
+    #cstypo{
+      align-items: center;
+      justify-content: center;
+    }
+    #cosmosmn{
+      width: 100%;
+      margin: 19px;
+    }
+    .wButton{
+      margin: 90px;
+    }
+    #clients{
+      display: flex;
+      flex-direction: column;
+      grid-area: "clients";
+      align-items: center;
+      justify-content: center;
+    }
+    .pageDown{
+      box-sizing: border-box;
+      position: fixed;
+      margin-right: -7%;
+
+    }
+    .pageUp{
+      box-sizing: border-box;
+      position: fixed;
+      margin-right: -7%;
+    }
+    /*This is where the hamburger menu starts*/
+    header{
+      height: 72px;
+    }
+    nav{
+      height: 72px;
+    }
+    #menuIcon{
+      display: block;
+      margin-right: 24px;
+    }
+    nav li{
+      display: none;
+    }
+    label{
+      display: block;
+      cursor: pointer;
+    }
+    
+      /*This is where the hamburger menu ends*/
+  }
+
+  
 
   
