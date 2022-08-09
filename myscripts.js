@@ -11,3 +11,6 @@ $('pageDown').on('click', function(e){
     }, 800);
   }
 });
+
+myElement = $(".exit");
+parent.$.fancybox.close();

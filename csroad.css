@@ -175,6 +175,9 @@ color:#262626;
     .item{
       transition: .5s ease-in-out;
     }
+    .exit{
+      display:none;
+    }
 .ideationStage2{
   border-top:5px solid #736853;
   background-color: #262626;
