@@ -44,6 +44,7 @@
       top: 0px;
       background: #262626;
       overflow: hidden;
+      z-index: 10;
     }
     #logo {
       float: left;
@@ -107,13 +108,9 @@
       width:100%;
     }
     #workPage{
-      background-image: url(/myportfolio/Images/orangebackground.svg);
-      background-size: cover;
-      background-repeat: no-repeat;
+      background-color: #ca4f37;
       overflow: scroll;
-      
       margin-top: 64px;
-      outline: 3px solid red;
     }
     .spaceMaker{
       margin:24px;
@@ -126,6 +123,7 @@
       border-color: 3px solid #736853;
       min-height: 705px;
       display: flex;
+      z-index:5;
     }
     .card-body{
       background-color: #00334F;
