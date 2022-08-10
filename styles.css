@@ -51,6 +51,10 @@
   #logo {
     float: left;
   }
+  #smallLogo{
+    display: none;
+    float: left;
+  }
   a:link {
     display: flex;
     color: #f2f2f2;
@@ -299,7 +303,6 @@
     width: 100vw;
     height: 100vh;
     top: 2241px;
-    background-image: url(./Images/bluebackground.svg);
     background-size: cover;
     background-color: #00334f;
     padding-left: 1%;
@@ -327,7 +330,6 @@
     height: 1060px;
     left: 0px;
     top: 3301px;
-    background-image: url(./Images/bronzebackground.svg);
     background-size: cover;
     background-color: #736853;
     padding-left: 1%;
@@ -335,11 +337,11 @@
     outline: 1px solid red;
   }
   .contactInfo {
-    width: 50%;
-    height: 50%;
+    width: fit-content;
+    height: fit-content;
     margin: auto;
     background-color: #262626;
-    outline: 1px solid red;
+    
   }
   form {
     font-family: Helvetica, sans-serif;
@@ -623,6 +625,12 @@
       /*This is where the hamburger menu ends*/
   }
   @media only screen and (max-width: 480px) and (min-width: 320px){
+    #logo{
+      display: none;
+    }
+    #smallLogo{
+      display: block;
+    }
     .home {
       grid-template-columns: 100%;
       padding: 0px;
@@ -652,7 +660,7 @@
       padding: 0px;
       grid-template-columns: 100%;
       grid-template-areas: "skills" "caseStudies" "clients";
-      height: ;
+      height: fit-content;
     }
     #caseStudy{
     display: flex;
@@ -678,6 +686,10 @@
       grid-area: "clients";
       align-items: center;
       justify-content: center;
+    }
+    .contact{
+      height:fit-content;
+      width:fit-content;
     }
    /*This is where the hamburger menu starts*/
    header{
