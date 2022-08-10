@@ -87,7 +87,6 @@
    justify-content: end;
    align-items: center;
    line-height: 72px;
-   outline: 1px solid red;
   }
   .navBar{
     display:flex;
@@ -238,17 +237,24 @@
     justify-content: center;
   }
   .workAarticle{
-    line-height: 24px;
+    display:flex
+    align-items: center;
+    justify-content: center;
   }
   .skillsList{
-    list-style: none;
+    display:block;
+    align-items: center;
+    justify-content: center;
   }
   .skillsT{
     text-decoration-line: underline;
+    margin:19px;
   }
   .skills{
-    /*empty for now*/
-    overflow: hidden;
+  line-height: 24px;
+  margin: 19px;
+  align-items: center;
+  justify-content: center;
   }
   
   #caseStudy{
