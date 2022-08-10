@@ -508,17 +508,6 @@
     .wButton{
       margin: 90px;
     }
-    .pageDown{
-      box-sizing: border-box;
-      position: fixed;
-      margin-right: -7%;
-
-    }
-    .pageUp{
-      box-sizing: border-box;
-      position: fixed;
-      margin-right: -7%;
-    }
     /*This is where the hamburger menu starts*/
     #menuIcon{
       display: block;
@@ -605,17 +594,6 @@
       grid-area: "clients";
       align-items: center;
       justify-content: center;
-    }
-    .pageDown{
-      box-sizing: border-box;
-      position: fixed;
-      margin-right: -7%;
-
-    }
-    .pageUp{
-      box-sizing: border-box;
-      position: fixed;
-      margin-right: -7%;
     }
     /*This is where the hamburger menu starts*/
     header{
@@ -704,17 +682,6 @@
       grid-area: "clients";
       align-items: center;
       justify-content: center;
-    }
-    .pageDown{
-      box-sizing: border-box;
-      position: fixed;
-      margin-right: -7%;
-
-    }
-    .pageUp{
-      box-sizing: border-box;
-      position: fixed;
-      margin-right: -7%;
     }
     /*This is where the hamburger menu starts*/
     header{
