@@ -39,11 +39,10 @@
   header {
     position: fixed;
     width: 100%;
-    height: 64px;
+    height: 72px;
     left: 0px;
     top: 0px;
     background: #262626;
-    overflow: hidden;
     z-index: 10;
   }
   #logo {
@@ -77,13 +76,20 @@
   #toggle{
     display: none;
   }
-  nav {
-  display: flex;
-   float:right;
-   align-items: center;
-   height: 64px;
+  label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 72px;
+    display: none;
   }
-  #navBar{
+  nav {
+  display:flex;
+   justify-content: end;
+   align-items: center;
+   line-height: 72px;
+   outline: 1px solid red;
+  }
+  .navBar{
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -96,15 +102,13 @@
     width:24px;
     margin-right: 19px;
   }
-  #navEl{
+  .navEl{
     margin-left: 19px;
     margin-right: 19px;
     font-family: 'Helvetica';
     font-size: 24px;
   } 
   body {
-    box-sizing: border-box;
-    overflow: scroll;
     width:100%;
   }
   .home {
@@ -510,22 +514,32 @@
       margin-right: -7%;
     }
     /*This is where the hamburger menu starts*/
-    header{
-      height: 72px;
-    }
-    nav{
-      height: 72px;
-    }
     #menuIcon{
       display: block;
-      margin-right: 24px;
     }
-    nav li{
-      display: none;
-    }
-    label{
+    label {
+      margin: 19px;
       display: block;
       cursor: pointer;
+      float: right;
+      width: 72px;
+
+    }
+    .navBar{
+      text-align: center;
+      width: 100%;
+      display: none;
+    }
+    .navEl{
+      clear: right;
+      text-decoration: none;
+      margin: 0;
+      display: block;
+      border-bottom: 1px solid #262626;
+    }
+    #toggle:checked + .navBar {
+      display: block;
+
     }
     
       /*This is where the hamburger menu ends*/
@@ -606,14 +620,25 @@
     }
     #menuIcon{
       display: block;
-      margin-right: 24px;
     }
-    nav li{
-      display: none;
-    }
-    label{
+    label {
       display: block;
       cursor: pointer;
+    }
+    .navBar{
+      text-align: center;
+      width: 100%;
+      display: none;
+    }
+    .navEl{
+      display: block;
+      border-bottom: 1px solid #262626;
+      margin: 0;
+      background-color: #f2f2f2;
+    }
+    #toggle:checked + .navBar {
+      display: block;
+
     }
     
       /*This is where the hamburger menu ends*/
@@ -694,14 +719,25 @@
     }
     #menuIcon{
       display: block;
-      margin-right: 24px;
     }
-    nav li{
-      display: none;
-    }
-    label{
+    label {
       display: block;
       cursor: pointer;
+    }
+    .navBar{
+      text-align: center;
+      width: 100%;
+      display: none;
+    }
+    .navEl{
+      display: block;
+      border-bottom: 1px solid #262626;
+      margin: 0;
+      background-color: #f2f2f2;
+    }
+    #toggle:checked + .navBar {
+      display: block;
+
     }
     
       /*This is where the hamburger menu ends*/
