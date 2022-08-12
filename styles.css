@@ -1,7 +1,8 @@
- html{
-  scroll-behavior: smooth;
+ html, body{
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
  }
  @font-face{
     font-family: Proxima Nova;
@@ -46,10 +47,13 @@
     left: 0px;
     top: 0px;
     background: #262626;
+    display:flex;
     z-index: 10;
   }
+ 
   #logo {
-    float: left;
+    justify-self: start;
+    align-items: center;
   }
   #smallLogo{
     display: none;
@@ -90,19 +94,12 @@
     display: none;
   }
   nav {
-  display:flex;
-   justify-content: end;
-   align-items: center;
    line-height: 72px;
-  
+   margin-left: auto;
   }
   .navBar{
     display:flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    
   }
   .circle{
     align-items: center;
@@ -115,9 +112,6 @@
     font-family: 'Helvetica';
     font-size: 24px;
   } 
-  body {
-    width:100%;
-  }
   .home {
     background-image: url(./Images/blackbackground.svg);
     background-size: cover;
@@ -161,12 +155,11 @@
     height: 72px;
     width: 54px;
     border: 3px solid #f2f2f2;
-    position:absolute; 
-    margin-top:18%;
-    left:50%;
     border-radius: 50px;
     cursor: pointer;
-    z-index: 1;
+    position: absolute;
+    right: 50%;
+    bottom: 24px;
   }
     .scroll-down::before,
     .scroll-down::after{
@@ -257,6 +250,9 @@
     justify-content: center;
     text-align: center;
     width: 100%;
+  }
+  #cosmosmnpic{
+    display: none;
   }
   #cosmosmn{
     width: 75%;
@@ -446,7 +442,7 @@
     html,body {
       margin:0;
       padding:0;
-      overflow-x:hidden;
+      overflow-x: hidden;
       }
     .scroll-down{
       margin-top: 25%;
@@ -459,7 +455,7 @@
     html,body {
       margin:0;
       padding:0;
-      overflow-x:hidden;
+      overflow-x: hidden;
       }
     .home {
       grid-template-columns: 100%;
@@ -500,6 +496,13 @@
     .cosmos{
     margin: 19px;
     }
+    #cosmosmnpic{
+      display: flex;
+      width: 90%;
+    }
+    #cosmosmn{
+      display:none;
+    }
     .wButton{
       margin: 90px;
     }
@@ -519,19 +522,24 @@
       cursor: pointer;
       float: right;
       width: 72px;
-
     }
     .navBar{
       text-align: center;
+      align-items: center;
+      justify-content: center;
       width: 100%;
       display: none;
+      background-color: #262626;
+      margin: 19px;
     }
     .navEl{
       clear: right;
       text-decoration: none;
-      margin: 0;
+      margin: 19px;
       display: block;
-      border-bottom: 1px solid #262626;
+      font-size: 72px;
+      font-family: Trade Gothic;
+      
     }
     #toggle:checked + .navBar {
       display: block;
@@ -544,7 +552,7 @@
     html,body {
       margin:0;
       padding:0;
-      overflow-x:hidden;
+      overflow-x: hidden;
       }
     .home {
       grid-template-columns: 100%;
@@ -570,9 +578,6 @@
     }
     .scroll-down{
       display:none;
-      position: absolute;
-      margin-bottom:24px;
-      margin-top: 60%;
     }
     .work{
       padding: 0px;
@@ -591,9 +596,13 @@
       align-items: center;
       justify-content: center;
     }
-    #cosmosmn{
-      width: 100%;
+    #cosmosmnpic{
+      display: flex;
+      width: 98%;
       margin: 19px;
+    }
+    #cosmosmn{
+      display:none;
     }
     .wButton{
       margin: 90px;
@@ -625,15 +634,21 @@
     }
     .navBar{
       text-align: center;
+      align-items: center;
+      justify-content: center;
       width: 100%;
       display: none;
+      background-color: #262626;
+      margin: 19px;
     }
     .navEl{
       clear: right;
       text-decoration: none;
-      margin: 0;
+      margin: 19px;
       display: block;
-      border-bottom: 1px solid #262626;
+      font-size: 72px;
+      font-family: Trade Gothic;
+      
     }
     #toggle:checked + .navBar {
       display: block;
@@ -646,7 +661,7 @@
     html,body {
       margin:0;
       padding:0;
-      overflow-x:hidden;
+      overflow-x: hidden;
       }
     #logo{
       display: none;
@@ -696,9 +711,13 @@
       align-items: center;
       justify-content: center;
     }
-    #cosmosmn{
-      width: 100%;
+    #cosmosmnpic{
+      display: flex;
+      width: 98%;
       margin: 19px;
+    }
+    #cosmosmn{
+     display: none;
     }
     .wButton{
       margin: 90px;
@@ -718,8 +737,12 @@
    header{
     height: 72px;
   }
+  #smalllogo{
+    width: 10%;
+  }
   nav{
     height: 72px;
+    width: 100%;
   }
   #menuIcon{
     display: block;
@@ -734,15 +757,18 @@
   }
   .navBar{
     text-align: center;
-    width: 100%;
+    align-items: center;
+    justify-content: start;
     display: none;
+    background-color: #262626;
+    margin: 0px;
   }
   .navEl{
-    clear: right;
-    text-decoration: none;
-    margin: 0;
+    margin-top: 30%;
     display: block;
-    border-bottom: 1px solid #262626;
+    font-size: 24px;
+    font-family: Trade Gothic;
+    
   }
   #toggle:checked + .navBar {
     display: block;
